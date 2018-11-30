@@ -61,8 +61,7 @@ class ShowProducts extends Command
     {
         $keys = $this->option();
         $arguments = $this->arguments();
-
-
+        
         $arr_fields_laptop = ['id', 'mark', 'RAM', 'GHz', 'display', 'price'];
         $arr_fields_car = ['id', 'mark', 'color', 'type', 'price'];
 
