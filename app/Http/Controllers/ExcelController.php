@@ -16,7 +16,6 @@ class ExcelController extends Controller
      *
      * @return void
      */
-
     public function importExportView()
     {
         return view('import_export');
@@ -32,8 +31,7 @@ class ExcelController extends Controller
         if ($request->hasFile('sample_file')) {
 
             $path = $request->file('sample_file')->getRealPath();
-            $data = \Excel::load($path)->get();
-
+            $data = Excel::load($path)->get();
 
             if ($data->count()) {
 
@@ -42,15 +40,12 @@ class ExcelController extends Controller
                 }
 
                 if (!empty($arr)) {
-
                     DB::table('products')->insert($arr);
 
                     dd('Insert Recorded successfully.');
-
                 }
             }
         }
-        
         dd('Request data does not have any files to import.');
     }
     

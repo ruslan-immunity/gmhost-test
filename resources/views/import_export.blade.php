@@ -1,13 +1,10 @@
 <html lang="en">
-
 <head>
     <title>Laravel 5.5 - import export data into excel and csv using maatwebsite </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
 </head>
-
 <body>
 <div class="container">
-
     <div class="panel panel-primary">
         <div class="panel-heading">Laravel 5.5 - import export data into excel and csv using maatwebsite </div>
         <div class="panel-body">
